@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Offboarding Report</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: Segoe UI, sans-serif; background: #f0f2f5; }
+        .header { background: linear-gradient(135deg, #1a237e, #0d47a1); color: white; padding: 25px 40px; }
+        .header h1 { font-size: 26px; margin-bottom: 8px; }
+        .header p { opacity: 0.8; font-size: 13px; }
+        .container { max-width: 1100px; margin: 30px auto; padding: 0 20px; }
+        .stats { display: flex; gap: 15px; margin-bottom: 25px; flex-wrap: wrap; }
+        .stat { background: white; border-radius: 10px; padding: 20px 25px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); flex: 1; min-width: 140px; border-top: 4px solid #0d47a1; }
+        .stat h2 { font-size: 32px; color: #0d47a1; margin-bottom: 5px; }
+        .stat p { font-size: 13px; color: #666; }
+        .stat.green { border-top-color: #388e3c; } .stat.green h2 { color: #388e3c; }
+        .stat.red { border-top-color: #d32f2f; } .stat.red h2 { color: #d32f2f; }
+        .stat.orange { border-top-color: #f57c00; } .stat.orange h2 { color: #f57c00; }
+        .employee-card { background: white; border-radius: 10px; padding: 25px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); margin-bottom: 20px; }
+        .employee-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px; flex-wrap: wrap; gap: 10px; }
+        .employee-header h3 { font-size: 18px; color: #1a237e; margin-bottom: 5px; }
+        .employee-header p { font-size: 13px; color: #666; }
+        .employee-meta { display: flex; gap: 8px; flex-wrap: wrap; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th { background: #0d47a1; color: white; padding: 10px 14px; text-align: left; font-size: 13px; }
+        td { padding: 10px 14px; border-bottom: 1px solid #f0f0f0; font-size: 13px; }
+        .success-row { background: #f1f8e9; }
+        .error-row { background: #ffebee; }
+        .badge { padding: 3px 10px; border-radius: 20px; font-size: 11px; font-weight: bold; color: white; display: inline-block; }
+        .badge.green { background: #388e3c; }
+        .badge.red { background: #d32f2f; }
+        .badge.orange { background: #f57c00; }
+        .badge.blue { background: #1565c0; }
+        .badge.gray { background: #757575; }
+        .manager-info { margin-top: 10px; font-size: 12px; color: #666; font-style: italic; }
+        .footer { text-align: center; color: #999; font-size: 12px; padding: 20px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🚪 Rapport d'Offboarding</h1>
+        <p>Généré le 11/05/2026 à 12:39 | Administrateur : Riki Kamgang</p>
+    </div>
+    <div class="container">
+        <div class="stats">
+            <div class="stat"><h2>3</h2><p>Employés traités</p></div>
+            <div class="stat green"><h2>18</h2><p>Actions réussies</p></div>
+            <div class="stat red"><h2>0</h2><p>Erreurs</p></div>
+            <div class="stat orange"><h2>6</h2><p>Étapes par employé</p></div>
+        </div>
+        <div class='employee-card'>
+        <div class='employee-header'>
+            <div>
+                <h3>👤 Jean Dupont</h3>
+                <p>jean.dupont@entreprise.fr — IT — Technicien Support</p>
+            </div>
+            <div class='employee-meta'>
+                <span class='badge orange'>🚪 Démission</span>
+                <span class='badge gray'>📅 Départ : 2026-05-31</span>
+                <span class='badge green'>✅ 6 OK</span>
+                
+            </div>
+        </div>
+        <table>
+            <tr><th>Étape</th><th>Action</th><th>Statut</th><th>Détail</th></tr>
+            <tr class='success-row'>
+            <td><strong>Étape 1</strong></td>
+            <td>Désactivation compte</td>
+            <td>✅ OK</td>
+            <td>Compte Azure AD désactivé</td>
+        </tr><tr class='success-row'>
+            <td><strong>Étape 2</strong></td>
+            <td>Révocation licences M365</td>
+            <td>✅ OK</td>
+            <td>Licences Microsoft 365 libérées</td>
+        </tr><tr class='success-row'>
+            <td><strong>Étape 3</strong></td>
+            <td>Transfert des mails</td>
+            <td>✅ OK</td>
+            <td>Mails transférés vers riki.kamgang@entreprise.fr</td>
+        </tr><tr class='success-row'>
+            <td><strong>Étape 4</strong></td>
+            <td>Archivage des données</td>
+            <td>✅ OK</td>
+            <td>Archivé dans ..\archives\Dupont_Jean_20260511</td>
+        </tr><tr class='success-row'>
+            <td><strong>Étape 5</strong></td>
+            <td>Réinitialisation mot de passe</td>
+            <td>✅ OK</td>
+            <td>Mot de passe temporaire généré</td>
+        </tr><tr class='success-row'>
+            <td><strong>Étape 6</strong></td>
+            <td>Retrait des groupes Azure AD</td>
+            <td>✅ OK</td>
+            <td>Retiré de tous les groupes de sécurité</td>
+        </tr>
+        </table>
+        <p class='manager-info'>📧 Manager notifié : riki.kamgang@entreprise.fr</p>
+    </div><div class='employee-card'>
+        <div class='employee-header'>
+            <div>
+                <h3>👤 Marie Martin</h3>
+                <p>marie.martin@entreprise.fr — RH — Chargee RH</p>
+            </div>
+            <div class='employee-meta'>
+                <span class='badge blue'>📋 Fin de contrat</span>
+                <span class='badge gray'>📅 Départ : 2026-05-31</span>
+                <span class='badge green'>✅ 6 OK</span>
+                
+            </div>
+        </div>
+        <table>
+            <tr><th>Étape</th><th>Action</th><th>Statut</th><th>Détail</th></tr>
+            <tr class='success-row'>
+            <td><strong>Étape 1</strong></td>
+            <td>Désactivation compte</td>
+            <td>✅ OK</td>
+            <td>Compte Azure AD désactivé</td>
+        </tr><tr class='success-row'>
+            <td><strong>Étape 2</strong></td>
+            <td>Révocation licences M365</td>
+            <td>✅ OK</td>
+            <td>Licences Microsoft 365 libérées</td>
+        </tr><tr class='success-row'>
+            <td><strong>Étape 3</strong></td>
+            <td>Transfert des mails</td>
+            <td>✅ OK</td>
+            <td>Mails transférés vers direction@entreprise.fr</td>
+        </tr><tr class='success-row'>
+            <td><strong>Étape 4</strong></td>
+            <td>Archivage des données</td>
+            <td>✅ OK</td>
+            <td>Archivé dans ..\archives\Martin_Marie_20260511</td>
+        </tr><tr class='success-row'>
+            <td><strong>Étape 5</strong></td>
+            <td>Réinitialisation mot de passe</td>
+            <td>✅ OK</td>
+            <td>Mot de passe temporaire généré</td>
+        </tr><tr class='success-row'>
+            <td><strong>Étape 6</strong></td>
+            <td>Retrait des groupes Azure AD</td>
+            <td>✅ OK</td>
+            <td>Retiré de tous les groupes de sécurité</td>
+        </tr>
+        </table>
+        <p class='manager-info'>📧 Manager notifié : direction@entreprise.fr</p>
+    </div><div class='employee-card'>
+        <div class='employee-header'>
+            <div>
+                <h3>👤 Bob Moreau</h3>
+                <p>bob.moreau@entreprise.fr — Marketing — Chef de projet</p>
+            </div>
+            <div class='employee-meta'>
+                <span class='badge red'>❌ Licenciement</span>
+                <span class='badge gray'>📅 Départ : 2026-06-15</span>
+                <span class='badge green'>✅ 6 OK</span>
+                
+            </div>
+        </div>
+        <table>
+            <tr><th>Étape</th><th>Action</th><th>Statut</th><th>Détail</th></tr>
+            <tr class='success-row'>
+            <td><strong>Étape 1</strong></td>
+            <td>Désactivation compte</td>
+            <td>✅ OK</td>
+            <td>Compte Azure AD désactivé</td>
+        </tr><tr class='success-row'>
+            <td><strong>Étape 2</strong></td>
+            <td>Révocation licences M365</td>
+            <td>✅ OK</td>
+            <td>Licences Microsoft 365 libérées</td>
+        </tr><tr class='success-row'>
+            <td><strong>Étape 3</strong></td>
+            <td>Transfert des mails</td>
+            <td>✅ OK</td>
+            <td>Mails transférés vers direction@entreprise.fr</td>
+        </tr><tr class='success-row'>
+            <td><strong>Étape 4</strong></td>
+            <td>Archivage des données</td>
+            <td>✅ OK</td>
+            <td>Archivé dans ..\archives\Moreau_Bob_20260511</td>
+        </tr><tr class='success-row'>
+            <td><strong>Étape 5</strong></td>
+            <td>Réinitialisation mot de passe</td>
+            <td>✅ OK</td>
+            <td>Mot de passe temporaire généré</td>
+        </tr><tr class='success-row'>
+            <td><strong>Étape 6</strong></td>
+            <td>Retrait des groupes Azure AD</td>
+            <td>✅ OK</td>
+            <td>Retiré de tous les groupes de sécurité</td>
+        </tr>
+        </table>
+        <p class='manager-info'>📧 Manager notifié : direction@entreprise.fr</p>
+    </div>
+        <p class="footer">Offboarding-Automation — Riki Kamgang | github.com/kamgangriki | linkedin.com/in/rikikamgang</p>
+    </div>
+</body>
+</html>

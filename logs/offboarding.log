@@ -1,0 +1,25 @@
+[2026-05-11 12:39:06] [INFO] Démarrage de l'offboarding
+[2026-05-11 12:39:06] [INFO] 3 employé(s) en cours de départ
+[2026-05-11 12:39:06] [INFO] === Départ de Jean Dupont ===
+[2026-05-11 12:39:06] [SUCCESS] Compte désactivé : jean.dupont@entreprise.fr
+[2026-05-11 12:39:06] [SUCCESS] Licences M365 révoquées : jean.dupont@entreprise.fr
+[2026-05-11 12:39:06] [SUCCESS] Mails transférés vers : riki.kamgang@entreprise.fr
+[2026-05-11 12:39:06] [SUCCESS] Données archivées dans : ..\archives\Dupont_Jean_20260511
+[2026-05-11 12:39:06] [SUCCESS] Mot de passe réinitialisé : jean.dupont@entreprise.fr
+[2026-05-11 12:39:06] [SUCCESS] Retiré de tous les groupes Azure AD : jean.dupont@entreprise.fr
+[2026-05-11 12:39:06] [INFO] === Départ de Marie Martin ===
+[2026-05-11 12:39:06] [SUCCESS] Compte désactivé : marie.martin@entreprise.fr
+[2026-05-11 12:39:06] [SUCCESS] Licences M365 révoquées : marie.martin@entreprise.fr
+[2026-05-11 12:39:06] [SUCCESS] Mails transférés vers : direction@entreprise.fr
+[2026-05-11 12:39:06] [SUCCESS] Données archivées dans : ..\archives\Martin_Marie_20260511
+[2026-05-11 12:39:06] [SUCCESS] Mot de passe réinitialisé : marie.martin@entreprise.fr
+[2026-05-11 12:39:06] [SUCCESS] Retiré de tous les groupes Azure AD : marie.martin@entreprise.fr
+[2026-05-11 12:39:06] [INFO] === Départ de Bob Moreau ===
+[2026-05-11 12:39:06] [SUCCESS] Compte désactivé : bob.moreau@entreprise.fr
+[2026-05-11 12:39:06] [SUCCESS] Licences M365 révoquées : bob.moreau@entreprise.fr
+[2026-05-11 12:39:06] [SUCCESS] Mails transférés vers : direction@entreprise.fr
+[2026-05-11 12:39:06] [SUCCESS] Données archivées dans : ..\archives\Moreau_Bob_20260511
+[2026-05-11 12:39:06] [SUCCESS] Mot de passe réinitialisé : bob.moreau@entreprise.fr
+[2026-05-11 12:39:06] [SUCCESS] Retiré de tous les groupes Azure AD : bob.moreau@entreprise.fr
+[2026-05-11 12:39:06] [INFO] Offboarding terminé — 3 employé(s) traité(s)
+[2026-05-11 12:39:06] [SUCCESS] Rapport HTML généré : ..\reports\offboarding-report.html
